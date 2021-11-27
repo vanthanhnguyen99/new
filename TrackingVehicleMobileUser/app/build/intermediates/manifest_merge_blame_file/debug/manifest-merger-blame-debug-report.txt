@@ -1,0 +1,133 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vanth.trackingvehicleuser"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="28"
+8-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:5:5-67
+11-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:6:5-80
+12-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:7:5-81
+13-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:8:5-79
+14-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:8:22-76
+15
+16    <uses-feature
+16-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:26:5-28:35
+17        android:glEsVersion="0x00020000"
+17-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:27:9-41
+18        android:required="true" />
+18-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:28:9-32
+19
+20    <queries>
+20-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:30:5-34:15
+21
+22        <!-- Needs to be explicitly declared on Android R+ -->
+23        <package android:name="com.google.android.apps.maps" />
+23-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:33:9-64
+23-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:33:18-61
+24    </queries>
+25
+26    <application
+26-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:10:5-38:19
+27        android:allowBackup="true"
+27-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:11:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.5.0] C:\Users\vanth\.gradle\caches\transforms-3\90fb9824b7c639cafcfd19b8aa61b8da\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+31        android:icon="@mipmap/ic_launcher"
+31-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:12:9-43
+32        android:label="@string/app_name"
+32-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:13:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:14:9-54
+34        android:supportsRtl="true"
+34-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:15:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.TrackingVehicleUser"
+36-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:16:9-57
+37        android:usesCleartextTraffic="true" >
+37-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:17:9-44
+38        <meta-data
+38-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:19:9-21:49
+39            android:name="com.google.android.geo.API_KEY"
+39-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:20:13-58
+40            android:value="@string/mapAPIKey" />
+40-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:21:13-46
+41
+42        <activity android:name="com.vanth.trackingvehicleuser.Activities.AddScheduleActivity" />
+42-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:22:9-67
+42-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:22:19-65
+43        <activity android:name="com.vanth.trackingvehicleuser.Activities.ScheduleListActivity" />
+43-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:23:9-68
+43-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:23:19-66
+44        <activity android:name="com.vanth.trackingvehicleuser.Activities.TrackingActivity" />
+44-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:24:9-65
+44-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:24:19-62
+45        <activity android:name="com.vanth.trackingvehicleuser.Activities.VehicleInfoActivity" />
+45-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:25:9-68
+45-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:25:19-65
+46        <activity android:name="com.vanth.trackingvehicleuser.Activities.MainActivity" />
+46-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:26:9-61
+46-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:26:19-58
+47        <activity android:name="com.vanth.trackingvehicleuser.Activities.SignUpActivity" />
+47-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:27:9-63
+47-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:27:19-60
+48        <activity android:name="com.vanth.trackingvehicleuser.Activities.LoginActivity" />
+48-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:28:9-62
+48-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:28:19-59
+49        <activity
+49-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:29:9-37:20
+50            android:name="com.vanth.trackingvehicleuser.Activities.WelcomeActivity"
+50-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:30:13-55
+51            android:exported="true" >
+51-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:31:13-36
+52            <intent-filter>
+52-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:32:13-36:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:33:17-69
+53-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:33:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:35:17-77
+55-->E:\Android Project\TrackingVehicleMobileUser\app\src\main\AndroidManifest.xml:35:27-74
+56            </intent-filter>
+57        </activity>
+58        <!-- Needs to be explicitly declared on P+ -->
+59        <uses-library
+59-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:39:9-41:40
+60            android:name="org.apache.http.legacy"
+60-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:40:13-50
+61            android:required="false" />
+61-->[com.google.android.gms:play-services-maps:18.0.0] C:\Users\vanth\.gradle\caches\transforms-3\f0acb102c85e5f7256c46e6e2a91df26\transformed\jetified-play-services-maps-18.0.0\AndroidManifest.xml:41:13-37
+62
+63        <activity
+63-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\vanth\.gradle\caches\transforms-3\36340d8e98f23f16463707daee0f5773\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+64            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+64-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\vanth\.gradle\caches\transforms-3\36340d8e98f23f16463707daee0f5773\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+65            android:exported="false"
+65-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\vanth\.gradle\caches\transforms-3\36340d8e98f23f16463707daee0f5773\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+66-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\vanth\.gradle\caches\transforms-3\36340d8e98f23f16463707daee0f5773\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+67
+68        <meta-data
+68-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\vanth\.gradle\caches\transforms-3\fcd7afa22b5ee116d1851c3e477af5be\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+69            android:name="com.google.android.gms.version"
+69-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\vanth\.gradle\caches\transforms-3\fcd7afa22b5ee116d1851c3e477af5be\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+70            android:value="@integer/google_play_services_version" />
+70-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\vanth\.gradle\caches\transforms-3\fcd7afa22b5ee116d1851c3e477af5be\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+71    </application>
+72
+73</manifest>

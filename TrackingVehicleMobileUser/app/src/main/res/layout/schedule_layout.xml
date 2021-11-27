@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/schedule_list_drawerLayoutHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Toolbar start-->
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/schedule_list_toolbarHomePage"
+                android:background="@color/myblue"
+                android:layout_width="match_parent"
+                app:title="Lịch trình phương tiện"
+                android:layout_height="?attr/actionBarSize">
+            </androidx.appcompat.widget.Toolbar>
+            <!--Toolbar end-->
+
+            <!--View Flipper start-->
+<!--            <ViewFlipper-->
+<!--                android:id="@+id/main_viewFlipper"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp">-->
+<!--            </ViewFlipper>-->
+            <!--View Flipper end-->
+
+            <!--Layout Product List start-->
+            <!--Layout Product List end-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:text="Danh sá"-->
+<!--                    android:textColor="#03A9F4"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold" />-->
+
+                <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                    android:id="@+id/schedule_list_pullToRefresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:swipeRefreshLayoutProgressSpinnerBackgroundColor="@color/myblue">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/schedule_list_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/background_homepage">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            </LinearLayout>
+
+            <com.ismaeldivita.chipnavigation.ChipNavigationBar
+                android:id="@+id/main_chipNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                app:cnb_menuResource="@menu/nav_item" />
+
+            <FrameLayout
+                android:id="@+id/main_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/chipNavigation" />
+        </LinearLayout>
+
+        <!--Layout Navigation View start-->
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/main_navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/nav_item"
+            app:headerLayout="@layout/layout_user_header_navigation"
+            android:background="@drawable/header">
+
+            <ListView
+                android:id="@+id/schedule_list_listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+        </com.google.android.material.navigation.NavigationView>
+
+        <!--Layout Navigation View end-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_foreground"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/schedule_list_add"/>
+        </FrameLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

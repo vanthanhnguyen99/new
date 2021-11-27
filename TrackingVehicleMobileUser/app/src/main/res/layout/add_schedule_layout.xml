@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/add_schedule_mainview">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_schedule_id_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/myblue"
+            android:hint="Biển kiểm soát"
+            android:inputType="textPersonName"
+            android:textColorHighlight="@color/myblue"
+            android:textCursorDrawable="@drawable/my_cursor"
+            app:layout_constraintBottom_toTopOf="@+id/add_schedule_startdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15"
+            android:drawableLeft="@drawable/ic_user_foreground"/>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_schedule_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/myblue"
+            android:drawableLeft="@drawable/ic_time_foreground"
+            android:hint="Thời gian xuất phát"
+            android:inputType="time"
+            android:textColorHighlight="@color/myblue"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            app:layout_constraintBottom_toTopOf="@+id/add_schedule_finishdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_schedule_startdate" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_schedule_startlocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/myblue"
+            android:drawableLeft="@drawable/ic_location_foreground"
+            android:hint="Địa điểm xuất phát"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/myblue"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:focusable="false"
+            app:layout_constraintBottom_toTopOf="@+id/add_schedule_finishlocation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_schedule_finishtime" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_schedule_finishdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/myblue"
+            android:drawableLeft="@drawable/ic_date_foreground"
+            android:hint="Ngày kết thúc dự kiến"
+            android:inputType="date"
+            android:textColorHighlight="@color/myblue"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:focusable="false"
+            app:layout_constraintBottom_toTopOf="@+id/add_schedule_finishtime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_schedule_starttime" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_schedule_finishtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="Thời gian kết thúc dự kiến"
+            android:textColorHighlight="@color/myblue"
+            android:inputType="time"
+            android:focusable="false"
+            app:layout_constraintTop_toBottomOf="@+id/add_schedule_finishdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/add_schedule_startlocation"
+            android:backgroundTint="@color/myblue"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:drawableLeft="@drawable/ic_time_foreground"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_schedule_finishlocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/myblue"
+            android:drawableLeft="@drawable/ic_location_foreground"
+            android:hint="Đích đến"
+            android:inputType="textPassword"
+            android:textColorHighlight="@color/myblue"
+            android:textCursorDrawable="@drawable/my_cursor"
+            app:layout_constraintBottom_toTopOf="@+id/add_schedule_add"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_schedule_startlocation" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_schedule_startdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/myblue"
+            android:drawableLeft="@drawable/ic_date_foreground"
+            android:focusable="false"
+            android:hint="Ngày xuất phát"
+            android:inputType="date"
+            android:textColorHighlight="@color/myblue"
+            android:textCursorDrawable="@drawable/my_cursor"
+            app:layout_constraintBottom_toTopOf="@+id/add_schedule_starttime"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_schedule_id_vehicle" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_schedule_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="56dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/my_button"
+            android:padding="20dp"
+            android:text="THÊM LỊCH TRÌNH"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_schedule_finishlocation" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="13dp"
+            android:text="THÊM LỊCH TRÌNH"
+            android:textColor="@color/myblue"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/add_schedule_id_vehicle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_marginVertical="70dp"
+        android:id="@+id/add_schedule_view_startlocation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#D3D3D3">
+            <fragment
+                android:id="@+id/add_schedule_map_startlocaion"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:hintText="Tỉnh thành"
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:layout_marginTop="10dp"
+                android:id="@+id/add_schedule_startprovince"/>
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:hintText="Quận huyện"
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:layout_marginTop="10dp"
+                android:id="@+id/add_schedule_startdisrict"/>
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:hintText="Phường xã"
+                android:outlineAmbientShadowColor="@color/myblue"
+                android:layout_marginTop="10dp"
+                android:id="@+id/add_schedule_startward"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/myblue"
+                android:hint="Địa chỉ"
+                android:inputType="textPostalAddress"
+                android:textColorHighlight="@color/myblue"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:enabled="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.15"
+                android:drawableLeft="@drawable/ic_user_foreground"
+                android:id="@+id/add_schedule_startaddress"/>
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/add_schedule_startlocation_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:alpha="0.7"
+            android:src="@drawable/ic_close_foreground"
+            android:layout_gravity="right|top"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="100dp"
+        android:paddingBottom="400dp"
+        android:visibility="gone"
+        android:id="@+id/add_schedule_view_finishlocation">
+        <fragment
+            android:id="@+id/add_schedule_map_finishlocaion"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+       <ImageView
+           android:id="@+id/add_schedule_finishlocation_close"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:alpha="0.7"
+           android:src="@drawable/ic_close_foreground"
+           android:layout_gravity="right|top"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
